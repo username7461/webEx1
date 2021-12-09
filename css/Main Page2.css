@@ -1,0 +1,270 @@
+@media only screen and (max-width: 500px) {
+.box { width: 30%; background: #92FE7E; margin: 0px; }
+}
+
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.header{
+	position: sticky;
+	padding: 22px;
+	height: 10%;
+	display: block;
+	
+	font-size: 48;
+	height: 0.98em;
+	top: 0px;
+	width: auto;
+	background-color: white;
+	color: white;
+	box-shadow: 0px 3px #dedede;
+	font-family: 'Cairo', sans-serif;
+	z-index: 2;
+}
+
+
+#logo-table{
+	color: blue;
+	position: relative;
+	display: inline;
+	float: left;
+	margin-left: 20%;
+	bottom: 0.8em;
+	font-size: 1.2em;
+
+}
+.nav{
+    float: right;
+	text-align: center;
+	margin-right: 20%;
+	display: block;
+	position: relative;
+	bottom: 2.3vh;
+}
+.nav a {
+
+float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	
+}
+.nav a:hover {
+  background-color: #ebebeb;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #8ad2ff;
+  color: white;
+}
+
+.main-content{
+
+	 min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.video-sec{
+	width:auto;
+
+}
+
+#video{
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  display: flex;
+  position: relative;
+  bottom: 4vh;
+}
+
+
+.question-sec{
+	display:flex;
+	width: 100%;
+}
+
+#question-table{
+	width: 100%;
+}
+
+#question-text{
+	font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	font-size: 1.7em;
+}
+
+#question-image{
+	text-align: center;
+}
+
+.STEM-container{
+	display:flex;
+	flex-direction: row;
+	height: 30%;
+	width: auto;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.7em;
+	margin: 10px;
+}
+
+#Science{
+	text-decoration: none;
+	display:flex;
+	background: url("../img/Science.png");
+	background-position: 25% 60%;
+	height: 100vh;
+	width: 25%;
+ 	background-repeat: no-repeat;
+  	background-size: 200vh;
+    margin: 6px 6px 0px 0px;
+    overflow: hidden;
+	transition: transform .5s;
+
+}
+
+#Science:hover {
+   transform:scale(1.05);
+}
+
+#Sci-block{
+	background-image: linear-gradient(to bottom, #4dbfff, rgba(202, 227, 242, 0));
+	height: 40%;
+	width: 100%;
+}
+
+#Sci-tag::first-letter {
+  font-size: 2em;
+}
+
+#Sci-tag{
+	 text-align: center;
+	 color: aliceblue;
+}
+
+
+
+
+#Engineering{
+	text-decoration: none;
+	display:flex;
+		background: url("../img/Engineering.jpg");
+	background-position: 80% 80%;
+	height: 100vh;
+	width: 25%;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+    margin: 6px 6px 0px 0px;
+    overflow: hidden;
+	transition: transform .5s;
+}
+#Engineering:hover {
+   transform:scale(1.05);
+}
+#Eng-block{
+	background-image: linear-gradient(to bottom, #4f3f00, rgba(202, 227, 242, 0));
+	height: 40%;
+	width: 100%;
+}
+#Eng-tag::first-letter {
+  font-size: 2em;
+}
+
+#Eng-tag{
+	 text-align: center;
+	 color: aliceblue;
+}
+#Technology{
+	text-decoration: none;
+	display:flex;
+	background: url("../img/Technology.jpg");
+	background-position: 50% 80%;
+	height: 100vh;
+	width: 25%;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+    margin: 6px 6px 0px 0px;
+    overflow: hidden;
+	transition: transform .5s;
+}
+#Technology:hover {
+   transform:scale(1.05);
+}
+#Tec-block{
+	background-image: linear-gradient(to bottom, black, rgba(202, 227, 242, 0));
+	height: 40%;
+	width: 100%;
+}
+#Tec-tag::first-letter {
+  font-size: 2em;
+}
+
+#Tec-tag{
+	 text-align: center;
+	 color: aliceblue;
+}
+#Mathematics{
+	text-decoration: none;
+	display:flex;
+	background: url("../img/Math.png");
+	background-size: cover;
+	float: right;
+	height: 100vh;
+ 	background-repeat: no-repeat;
+    margin: 6px 6px 0px 0px;
+	width: 25%;
+    overflow: hidden;
+	transition: transform .5s;
+}
+#Mathematics:hover {
+   transform:scale(1.05);
+}
+#Math-block{
+	background-image: linear-gradient(to bottom, #07233d, rgba(202, 227, 242, 0));
+	height: 37%;
+	width: 100%;
+}
+#Math-tag::first-letter {
+  font-size: 2em;
+}
+
+#Math-tag{
+	 text-align: center;
+	 color: aliceblue;
+}
+
+.footer{
+	height: 50px;
+	width: 100%;
+	bottom: 0px;
+	background: white;
+	padding:40px 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em ;
+}
+
+.footer-img{
+  margin: auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text{
+	position: relative;
+	text-align: center;
+	top: 10px;
+	width: 100%;
+	height: auto;
+}

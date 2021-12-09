@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+  <script type="text/javascript">
+    function showDiv(select){
+   if(select.value=="Y"){
+    document.getElementById('hidden_div').style.display = "block";
+   } else{
+    document.getElementById('hidden_div').style.display = "none";
+   }
+} 
+</script>
+<meta charset="utf-8">
+<title>STEM Club | Register</title>
+<link rel="stylesheet" href="css/Register.css" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <table id="logo-table">
+      <tr>
+        <th><img src="img/logo.png" alt="logo" width="32" height="35" ></th>
+        <th>STEM Club</th>
+      </tr>
+    </table>
+    
+    <div class="nav2">
+      <a href="Main Page2.html">Home</a>
+	<a href="Members.html">Members</a>
+      <a href="blog.html">Blog</a>
+      <a href="joinacivity.html">Join Club</a>
+      <a class="active" href="Register.html">Register</a>
+    </div>	
+  </div>
+
+<div class="flex-container">
+  <div class="image_block" id="stem-img">
+	  
+    <div id="text-In-Img">
+		<div id="reg-header">Enroll To Our Club	<hr></div>
+	
+      <form method="post" enctype="multipart/form-data" id="register-form">
+        <input type="hidden" name="region" value="North America" /><br/>
+
+          First Name :	
+          <input name="fname" type="text" pattern="^[A-Z][a-zA-Z]{0,}" required/>
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		  Last Name :	
+          <input name="lname" type="text" pattern="^[A-Z[a-zA-Z]{0,}" required/>
+		  
+          <br />
+		  <br />
+		  
+          Phone No : &nbsp;
+          <input name="phoneno" type="text" pattern="[0-9]{8}" required/>
+		  
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		  Email Address :
+		   <input name="email" type="email"  required/>
+		  
+		  <br />
+          <br />
+		  
+        
+		  
+		  Is Our School Student:
+		  <input type="radio" name="isStudent" value="Y" onclick="showDiv(this)"/>Yes
+          <input type="radio" name="isStudent" value="N" selected="selected" onclick="showDiv(this)" />No 
+		  
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <div id="hidden_div" style="display: none;">
+        Class:
+		  <input name="class" type="text" />
+    </div>
+		  
+		  <br />
+		  
+		  Gender :
+          <input type="radio" name="gender" value="M" required="required"/>Male
+          <input type="radio" name="gender" value="F" /> Female 
+		  
+		  <br />
+		  <br />
+          Most Favourite field in STEM :
+          <select name="fav-stem">
+            <option value="S" selected="selected">Science</option>
+            <option value="T">Technology</option>
+            <option value="E">Engineering</option>
+			<option value="M">Mathematics</option>
+          </select>
+		  
+          <br />
+		  <br />
+		  
+          Club activities you are interested (Can select more than one) : <br />
+         
+		  <input type="checkbox" name="Fl" value="micro" />
+          Micro:bit workshop
+		  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+          <input type="checkbox" name="F2" value="robotDev" />
+          Battery based robot development 
+		  
+          <input type="checkbox" name="F3" value="hPgrm" />
+          Hanoi programming<br/>
+		  
+          <input type="checkbox" name="F4" value="html" />
+		  HTML development 
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		  <input type="checkbox" name="F5" value="mBoard" />
+		  Math board games &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  
+		  <input type="checkbox" name="F6" value="bridge" />
+		  Bridge building competition
+		  
+		  <br />
+		  <br />
+		  
+          <legend>Comment about your impression to our club:</legend>
+          <textarea rows="3" cols="50" name="comment"> In less than 100 words... </textarea>
+		  
+          <br />
+		  <br />
+		  
+          Send us photos of you so we can better recognise you (Optional) : <br />
+          <input type="file" name="photo" />
+		  
+          <br />
+		  <br />
+		  
+          Out of 10 how do you feel about our website :
+          <input type="number" min="0" max="10" />
+          stars (Min 0, Max 10)
+          <br />
+		  <br />
+		  
+        <input type="submit" value="Sumbit" onclick="alert('The form has been sent!')"/>
+        <input type="reset" value="Reset Form" />
+      </form>
+		
+    </div>
+  </div>
+</div>
+	
+	<div class="footer">
+	<footer>
+
+<img src="img/footer.png" width = "100%" height = "1">
+		
+		<div class="footer-img">
+		<table>
+		<tr>
+			<th><img src="img/footer-Address@2x.png" width = "30" height = "30"> </th>
+			<th>3684 Rowes Lane, MAYSVILLE, West Virginia</th>
+		</tr>
+	</table>
+			 </div>
+		
+			<div class="footer-img">
+					<table>
+		<tr>
+			<th><img src="img/footer-Email@2x.png" width = "30" height = "30"></th>
+			<th>	mjhp34esi1n@temporary-mail.net</th>
+		</tr>
+	</table>
+			</div>
+		
+			<div class="footer-img">
+					<table>
+		<tr>
+			<th><img src="img/footer-Telephone@2x.png" width = "30" height = "30"> </th>
+			<th>+1 270-634-7473</th>
+		</tr>
+	</table>
+    </div>
+
+	<div class="footer-text">
+	 About us   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Overview    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 News    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	FAQ    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Collaborate With Us  <br/>
+		<img src="img/School.png" width = "300" height = "168">
+	</div>
+		</footer>
+	</div>	
+  
+</body>
+</html>
